@@ -1,11 +1,14 @@
 {
   "name": "tic-tac-ton",
+  "homepage": "https://gourish-mokashi.github.io/tic-tac-ton/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
     "build": "tsc && vite build",
+    "deploy": "gh-pages -d build",
     "preview": "vite preview",
     "configbot": "node configure.js"
   },
@@ -16,6 +19,7 @@
     "@tonconnect/ui-react": "^0.0.14",
     "@twa-dev/sdk": "^6.4.2",
     "buffer": "^6.0.3",
+    "gh-pages": "^6.3.0",
     "immer": "^9.0.19",
     "is-mobile": "^3.1.1",
     "react": "^18.2.0",
@@ -26,7 +30,8 @@
     "ton-crypto": "^3.2.0",
     "ts-node": "^10.9.1",
     "use-local-storage": "^2.3.6",
-    "vite-plugin-node-polyfills": "^0.7.0"
+    "vite-plugin-node-polyfills": "^0.7.0",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
